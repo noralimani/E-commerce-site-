@@ -21,7 +21,6 @@ const Home: NextPage = () => {
         <span>
           <Image src="/banner.jpg" alt="banner" width={2000} height={500} />
         </span>
-
         <div className={styles.cart}>
           <ItemCardGrid />
         </div>

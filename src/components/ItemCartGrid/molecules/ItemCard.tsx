@@ -9,29 +9,19 @@ interface ItemCardProps {
 
 const ItemCard = ({ title, price, image }: ItemCardProps) => {
   return (
-    <Flex
-      position="relative"
-      w="30vh"
-      h="30vh"
-      p="4px"
-      bg="gray"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Box pb="8px">
+    <Flex bg="gray" flexDirection="column">
+      <Box width="100%" height="auto" pb="8px">
         <Image boxSize="200px" src={image} alt="product image" />
       </Box>
-      <Box backgroundColor="white" w="100%">
-        <Text
-          as="b"
-          display="Flex"
-          justifyContent="center"
-          alignItems="center"
-          color="primary"
-          fontFamily="Sans-serif"
-          fontSize="xl"
-        >
+      <Box
+        display="Flex"
+        justifyContent="center"
+        alignItems="center"
+        flexDirection="column"
+        backgroundColor="white"
+        w="100%"
+      >
+        <Text as="b" color="primary" fontFamily="Sans-serif" fontSize="xl">
           {title}
         </Text>
         <Text>Nora</Text>

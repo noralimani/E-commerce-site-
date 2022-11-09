@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import ItemCard from './molecules/ItemCard'
 
@@ -24,13 +24,13 @@ const ItemCardGrid = () => {
     >
       {products.map((product: any, i: number) => {
         return (
-          <Flex key="i" p="16px">
+          <Box key="i" p="16px">
             <ItemCard
               image={product.thumbnail}
               title={product.title}
               price={product.price}
             />
-          </Flex>
+          </Box>
         )
       })}
     </Flex>
