@@ -2,11 +2,11 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
+import { ContactMain } from '../components/Contact/ContactMain'
 import Header from '../components/Header/Header'
-import HeroSlide from '../components/HeroSlide/HeroSlide'
 import ItemCardGrid from '../components/ItemCartGrid/ItemCartGrid'
 
-const Home: NextPage = () => {
+const Contact: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,11 +19,8 @@ const Home: NextPage = () => {
         <div className={styles.header}>
           <Header />
         </div>
-        <span>
-          <HeroSlide />
-        </span>
-        <div className={styles.cart}>
-          <ItemCardGrid />
+        <div className={styles.contact}>
+          <ContactMain />
         </div>
       </main>
 
@@ -32,4 +29,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Contact

@@ -3,7 +3,6 @@
   position: relative;
 }
 
-
 .main {
   width: auto;
   height: auto;
@@ -102,6 +101,11 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.contact {
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 600px) {
